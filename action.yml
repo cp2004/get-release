@@ -18,6 +18,9 @@ outputs:
     description: 'Whether this release is marked as a draft or not'
   prerelease:
     description: 'Whether this release is marked as a pre-release or not'
+inputs:
+  tag:
+    description: 'The tag to find the release info from'
 runs:
   using: 'node12'
   main: 'dist/index.js'
